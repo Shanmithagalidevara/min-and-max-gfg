@@ -1,0 +1,17 @@
+#User function Template for python3
+#User function Template for python3
+
+class Solution:
+    def get_min_max(self, arr):
+        min_val = float('inf')
+        max_val = float('-inf')
+        
+        # Traverse the array to find min and max
+        for num in arr:
+            if num < min_val:
+                min_val = num
+            if num > max_val:
+                max_val = num
+                
+        return min_val,    max_val
+    
